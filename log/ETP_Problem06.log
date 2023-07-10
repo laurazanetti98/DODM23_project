@@ -1,0 +1,11 @@
+
+Gurobi 10.0.1 (win64, Python) logging started Sun Jul  9 20:11:41 2023
+
+Set parameter Username
+Set parameter LogFile to value "C:/Users/asus/Desktop/ETP_problem/log/ETP_Problem06.log"
+Academic license - for non-commercial use only - expires 2024-03-21
+Set parameter Threads to value 1
+Set parameter Presolve to value 1
+Set parameter Method to value 0
+Set parameter TimeLimit to value 600
+Set parameter PreSparsify to value 1

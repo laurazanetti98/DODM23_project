@@ -1,0 +1,96 @@
+
+Gurobi 10.0.1 (win64, Python) logging started Mon Jul 10 12:07:09 2023
+
+Set parameter Username
+Set parameter LogFile to value "C:/Users/asus/Desktop/ETP_problem/log/ETP_Problem03.log"
+Academic license - for non-commercial use only - expires 2024-03-21
+Set parameter Threads to value 1
+Set parameter Presolve to value 1
+Set parameter Method to value 0
+Set parameter TimeLimit to value 600
+Set parameter PreSparsify to value 1
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 1121752 rows, 40660 columns and 3254214 nonzeros
+Model fingerprint: 0xcb66db9f
+Variable types: 36100 continuous, 4560 integer (4560 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 95258 rows and 31307 columns (presolve time = 5s) ...
+Presolve removed 97486 rows and 31307 columns (presolve time = 10s) ...
+Presolve removed 99078 rows and 31307 columns (presolve time = 15s) ...
+Presolve removed 99166 rows and 31307 columns (presolve time = 20s) ...
+Presolve removed 99184 rows and 31307 columns (presolve time = 25s) ...
+Presolve removed 99184 rows and 31307 columns (presolve time = 30s) ...
+Presolve removed 99186 rows and 31307 columns (presolve time = 35s) ...
+Presolve removed 99186 rows and 31307 columns (presolve time = 40s) ...
+Presolve removed 99186 rows and 31307 columns (presolve time = 45s) ...
+Sparsify removed 3214 nonzeros (0%)
+Presolve removed 99186 rows and 40076 columns (presolve time = 50s) ...
+Presolve removed 99186 rows and 31008 columns
+Presolve time: 50.09s
+Presolved: 1022566 rows, 9652 columns, 3759464 nonzeros
+Variable types: 0 continuous, 9652 integer (4855 binary)
+Root relaxation presolved: 9652 rows, 1032218 columns, 3769116 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0      handle free variables                         55s
+    3830    4.5938694e+31   2.181597e+34   4.593869e+01     62s
+    4460    2.3839966e+31   2.205201e+34   2.383997e+01     66s
+    5027    7.6685118e+30   4.790968e+33   7.668512e+00     71s
+    5538    6.1057989e+30   2.079260e+34   6.105799e+00     75s
+    6102    3.2061000e+29   4.603747e+33   3.206108e-01     81s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0       6170    -infinity      1.1735545e+03     82s
+       1       8250   2.9172922e-06   7.0846141e+02     84s
+       2       9927   2.9595191e-06   4.8016454e+02     85s
+       3      11564   2.9595191e-06   2.2811776e+02     86s
+       4      13017   2.9595191e-06   9.3198056e+01     86s
+       5      14521   2.9595191e-06   1.7944533e+01     87s
+
+Sifting complete
+
+   15958   -0.0000000e+00   0.000000e+00   0.000000e+00     88s
+   15958   -0.0000000e+00   0.000000e+00   0.000000e+00     88s
+   15958    0.0000000e+00   0.000000e+00   0.000000e+00     88s
+
+Root relaxation: objective 0.000000e+00, 15958 iterations, 35.16 seconds (19.56 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  964          -    0.00000      -     -  142s
+     0     0    0.00000    0 1192          -    0.00000      -     -  448s
+     0     0    0.00000    0 1084          -    0.00000      -     -  502s
+     0     0          -    0               -    0.00000      -     -  600s
+
+Cutting planes:
+  Gomory: 1
+  Lift-and-project: 7
+  Clique: 613
+  MIR: 14
+  StrongCG: 1
+  Zero half: 110
+  RLT: 1433
+  Relax-and-lift: 49
+  BQP: 1818
+
+Explored 1 nodes (43944 simplex iterations) in 600.07 seconds (1167.84 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 0.000000000000e+00, gap -

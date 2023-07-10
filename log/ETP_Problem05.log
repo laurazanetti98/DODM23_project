@@ -1,0 +1,86 @@
+
+Gurobi 10.0.1 (win64, Python) logging started Mon Jul 10 12:36:32 2023
+
+Set parameter Username
+Set parameter LogFile to value "C:/Users/asus/Desktop/ETP_problem/log/ETP_Problem05.log"
+Academic license - for non-commercial use only - expires 2024-03-21
+Set parameter Threads to value 1
+Set parameter Presolve to value 1
+Set parameter Method to value 0
+Set parameter TimeLimit to value 600
+Set parameter PreSparsify to value 1
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 1120131 rows, 221741 columns and 3250370 nonzeros
+Model fingerprint: 0x0175a589
+Variable types: 212521 continuous, 9220 integer (9220 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Presolve removed 97439 rows and 206968 columns (presolve time = 5s) ...
+Presolve removed 98933 rows and 206968 columns (presolve time = 10s) ...
+Presolve removed 98967 rows and 206968 columns (presolve time = 15s) ...
+Presolve removed 100456 rows and 207156 columns (presolve time = 20s) ...
+Sparsify removed 336 nonzeros (0%)
+Presolve removed 100456 rows and 207120 columns
+Presolve time: 21.39s
+Presolved: 1019675 rows, 14621 columns, 3453781 nonzeros
+Variable types: 0 continuous, 14621 integer (8734 binary)
+Root relaxation presolved: 14621 rows, 1034296 columns, 3468402 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0      handle free variables                         27s
+
+Starting sifting (using dual simplex for sub-problems)...
+
+    Iter     Pivots    Primal Obj      Dual Obj        Time
+       0       5696    -infinity      2.3255520e+03     30s
+       1       7890   2.6932809e-02   1.6867300e+03     31s
+       2      11220   2.6932809e-02   1.1202041e+03     33s
+       3      14150   2.6932809e-02   6.5377454e+02     34s
+       4      16802   2.6932809e-02   4.1282223e+02     35s
+       5      19694   2.6932809e-02   2.0004523e+02     37s
+       6      22207   2.6932809e-02   1.3731201e+02     38s
+       7      24850   2.6932809e-02   1.8236568e+00     39s
+
+Sifting complete
+
+   27222   -0.0000000e+00   0.000000e+00   0.000000e+00     39s
+   27222   -0.0000000e+00   0.000000e+00   0.000000e+00     39s
+   27222    0.0000000e+00   0.000000e+00   0.000000e+00     40s
+
+Root relaxation: objective 0.000000e+00, 27222 iterations, 15.31 seconds (12.11 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0 1175          -    0.00000      -     -   85s
+     0     0    0.00000    0 1617          -    0.00000      -     -  446s
+     0     0    0.00000    0 1499          -    0.00000      -     -  562s
+
+Cutting planes:
+  Gomory: 10
+  Lift-and-project: 19
+  Clique: 641
+  MIR: 52
+  StrongCG: 1
+  Zero half: 66
+  RLT: 351
+  Relax-and-lift: 41
+  BQP: 493
+
+Explored 1 nodes (72627 simplex iterations) in 600.20 seconds (1477.44 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 0
+
+Time limit reached
+Best objective -, best bound 0.000000000000e+00, gap -

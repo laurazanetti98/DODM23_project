@@ -1,0 +1,83 @@
+
+Gurobi 10.0.1 (win64, Python) logging started Mon Jul 10 13:40:28 2023
+
+Set parameter Username
+Set parameter LogFile to value "C:/Users/asus/Desktop/ETP_problem/log/ETP_Problem08.log"
+Academic license - for non-commercial use only - expires 2024-03-21
+Set parameter Threads to value 1
+Set parameter Presolve to value 1
+Set parameter Method to value 0
+Set parameter TimeLimit to value 600
+Set parameter PreSparsify to value 1
+Gurobi Optimizer version 10.0.1 build v10.0.1rc0 (win64)
+
+CPU model: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, instruction set [SSE2|AVX|AVX2]
+Thread count: 4 physical cores, 8 logical processors, using up to 1 threads
+
+Optimize a model with 114584 rows, 35696 columns and 330740 nonzeros
+Model fingerprint: 0xded6b4f9
+Variable types: 33856 continuous, 1840 integer (1840 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+01]
+Found heuristic solution: objective 7442.0000000
+Presolve removed 11226 rows and 32426 columns
+Presolve time: 3.53s
+Presolved: 103358 rows, 3270 columns, 418742 nonzeros
+Variable types: 0 continuous, 3270 integer (1840 binary)
+Root relaxation presolved: 3270 rows, 106628 columns, 422012 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+    3376    2.3955209e+01   1.294215e+04   0.000000e+00      5s
+    3955   -0.0000000e+00   0.000000e+00   0.000000e+00      6s
+    3955   -0.0000000e+00   0.000000e+00   0.000000e+00      6s
+    3955    0.0000000e+00   0.000000e+00   0.000000e+00      6s
+
+Root relaxation: objective 0.000000e+00, 3955 iterations, 2.02 seconds (1.86 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  709 7442.00000    0.00000   100%     -   13s
+H    0     0                    7370.0000000    0.00000   100%     -   13s
+     0     0    0.00000    0  692 7370.00000    0.00000   100%     -   25s
+H    0     0                    7278.0000000    0.00000   100%     -   26s
+     0     0    0.00000    0  665 7278.00000    0.00000   100%     -   27s
+     0     0    0.00000    0  703 7278.00000    0.00000   100%     -   45s
+H    0     0                    7227.0000000    0.00000   100%     -   46s
+     0     0    0.00000    0  670 7227.00000    0.00000   100%     -   48s
+     0     0    0.00000    0  682 7227.00000    0.00000   100%     -   66s
+     0     0    0.00000    0  658 7227.00000    0.00000   100%     -   70s
+     0     0    0.00000    0  688 7227.00000    0.00000   100%     -   91s
+H    0     0                    7196.0000000    0.00000   100%     -   91s
+     0     0    0.00000    0  657 7196.00000    0.00000   100%     -   94s
+     0     0    0.00000    0  679 7196.00000    0.00000   100%     -  110s
+H    0     0                    7171.0000000    0.00000   100%     -  111s
+     0     0    0.00000    0  637 7171.00000    0.00000   100%     -  113s
+     0     0    0.00000    0  674 7171.00000    0.00000   100%     -  132s
+     0     0    0.00000    0  674 7171.00000    0.00000   100%     -  143s
+H    0     0                    5990.0000000    0.00000   100%     -  154s
+H    0     0                    5903.0000000    0.00000   100%     -  200s
+H    0     0                    5879.0000000    0.00000   100%     -  218s
+     3     3    0.00000    2   19 5879.00000    0.00000   100% 24560  220s
+
+Cutting planes:
+  Clique: 13
+  MIR: 108
+  StrongCG: 2
+  Zero half: 23
+  RLT: 7
+  Relax-and-lift: 7
+
+Explored 503 nodes (154367 simplex iterations) in 600.13 seconds (831.37 work units)
+Thread count was 1 (of 8 available processors)
+
+Solution count 9: 5879 5903 5990 ... 7442
+
+Time limit reached
+Best objective 5.879000000000e+03, best bound 0.000000000000e+00, gap 100.0000%
